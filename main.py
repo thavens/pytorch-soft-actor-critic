@@ -48,7 +48,7 @@ args = parser.parse_args()
 
 # Environment
 # env = NormalizedActions(gym.make(args.env_name))
-env = gym.make(args.env_name)
+env = gym.make('2048-v0')
 env.seed(args.seed)
 env.action_space.seed(args.seed)
 
