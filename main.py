@@ -1,6 +1,6 @@
 import argparse
 import datetime
-import gym
+import game as gym
 import numpy as np
 import itertools
 import torch
