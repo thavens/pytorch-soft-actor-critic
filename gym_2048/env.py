@@ -110,7 +110,7 @@ class Base2048Env(gym.Env):
         len(zero_locs), size=count)
 
     zero_pos = zero_locs[zero_indices]
-    zero_pos = list(zip(*zero_pos))
+    zero_pos = tuple(zip(*zero_pos))
     return zero_pos
 
   def _place_random_tiles(self, board, count=1):
